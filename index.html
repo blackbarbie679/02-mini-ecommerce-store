@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛍 Nova Store</h1>
+        <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <h2>Wireless Headphones</h2>
+            <p>$50</p>
+            <button onclick="addToCart('Wireless Headphones', 50)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h2>Smart Watch</h2>
+            <p>$80</p>
+            <button onclick="addToCart('Smart Watch', 80)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h2>Bluetooth Speaker</h2>
+            <p>$40</p>
+            <button onclick="addToCart('Bluetooth Speaker', 40)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <h3>Total: $<span id="total">0</span></h3>
+        <button onclick="clearCart()">Clear Cart</button>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
